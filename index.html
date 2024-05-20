@@ -358,7 +358,44 @@
     </section>
 
     <!--=============== CONTACT ===============-->
-    <section class="contact section" id="contact"></section>
+    <section class="contact section" id="contact">
+      <div class="contact__container container grid">
+        <div class="contact__content">
+
+          <h2 class="section__title">Contacta conmigo</h2>
+
+          <p class="contact__description">
+            Estoy disponible para trabajar. Escribeme por celular:
+            <a href="tel:+50497925199">+504 9792-5199</a>
+            o a mi correo electronico: <a href="gcruzp@gmail.com">gcruzp@gmail.com</a>
+          </p>
+
+          <form class="contact__form" id="contact-form">
+            <div class="contact__form-input">
+              <input type="text" name="name" placeholder="Nombre completo" class="contact__input" id="contact-name" />
+            </div>
+            <div class="contact__form-input">
+              <input type="email" name="email" placeholder="Correo electronico" class="contact__input"
+                id="contact-email" />
+            </div>
+            <div class="contact__form-input">
+              <input type="text" name="subject" placeholder="Titulo" class="contact__input" id="contact-subject" />
+            </div>
+            <div class="contact__form-input">
+              <textarea name="message" id="contact-message" class="contact__input textarea"
+                placeholder="Mensaje"></textarea>
+            </div>
+
+            <input type="submit" value="Submit" class="btn" />
+
+            <p class="error__message" id="error-message"></p>
+
+          </form>
+        </div>
+        <!-- <img src="assets/img/contact.jpg" alt="" class="contact__img"> -->
+        <img src="assets/img/about.jpg" alt="" class="contact__img">
+      </div>
+    </section>
   </main>
 
   <!--=============== FOOTER ===============-->
@@ -367,7 +404,7 @@
   <!--=============== SCROLL UP ===============-->
 
   <!--=============== EMAIL JS ===============-->
-  <script src=""></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
