@@ -323,6 +323,7 @@ input {
 /*=============== ABOUT ===============*/
 .about {
   background-color: var(--container-color);
+  padding-bottom: 10px;
 }
 
 .about__container {
@@ -394,7 +395,22 @@ input {
 
 .tab__active[data-content] {
   display: block;
+} 
+
+.tabs__content {
+  overflow: hidden; /* Asegura que el contenido no desborde */
+  transition: height 0.5s ease; /* Transición suave para la altura */
 }
+
+.tabs__item {
+  display: none; /* Oculta el contenido inicialmente */
+}
+
+.tabs__item.active {
+  display: block; /* Muestra el contenido activo */
+}
+
+
 
 /*=============== SERVICES ===============*/
 .services__container {
